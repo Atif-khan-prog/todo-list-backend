@@ -6,7 +6,7 @@ import router from './routes/router.js';
 const app = express();
 
 app.use(cors({
-    origin: ['https://todo-list-fro.netlify.app'],
+    origin: ['https://todo-list-fro.netlify.app','https://todo-list-fro.netlify.app/'],
     methods: ['GET', 'DELETE', 'PUT', 'POST'],
 }));
 
