@@ -9,6 +9,6 @@ export const getEntries = async (req, res) =>{
     const entries = await Todo.find();
     res.status(200).json(entries);
   } catch (err) {
-    res.status(500).json({ message: 'Error while fetching', err });
+    res.status(500).json([{ message: 'Error while fetching', err }]);
   }
 }
